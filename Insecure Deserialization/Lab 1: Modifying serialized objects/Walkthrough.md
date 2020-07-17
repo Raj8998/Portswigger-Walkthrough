@@ -2,7 +2,7 @@
 ## Modifying Serialized Objects
 
 ### Question Description:
-We have user access as wiener:peter but the lab is vulnerable to insecure deserialization which helps us to escalate privilege as admin. After gaining admin access we just have to delete Carlos's(other user) account.
+We have user access as `wiener:peter` but the lab is vulnerable to insecure deserialization which helps us to escalate privilege as admin. After gaining admin access we just have to delete Carlos's(other user) account.
 
 ### Tools needed:
 
