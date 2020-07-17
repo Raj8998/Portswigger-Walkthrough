@@ -1,7 +1,7 @@
 # Insecure Deserialization
 ## What is serialization?
 
-**Serialization** is the process of converting complex data structure, such as objects and their fields, into a "flatter" format that can be sent and received as a sequential stream of bytes [1](https://portswigger.net/web-security/deserialization).
+**Serialization** is the process of converting complex data structure, such as objects and their fields, into a "flatter" format that can be sent and received as a sequential stream of bytes [[1](https://portswigger.net/web-security/deserialization)].
 
 ## Decerialization
 
