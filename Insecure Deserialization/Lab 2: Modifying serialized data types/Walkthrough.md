@@ -22,5 +22,12 @@ First decode it with URL Encoding and then with base64. The decoded object will 
 
 #### Step 2 [ Modify and forward serialized object ]:
 
-The point of interest here is the access_token as in theory description on the site [ Exploiting Insecure Deserialization ](https://portswigger.net/web-security/deserialization/exploiting) explained if we change the serialized object's data type and value of `s:32:"rk8hIhoZFnTDxKQP015Tesyd7uYqU8y6"` to `i:0` and if this goes unchecked the user access is given without any password and we need `administrator` authentication thus we also need to change the value of username. The modified object will look like below.
+The point of interest here is the access_token as in theory description on the site [ Exploiting Insecure Deserialization ](https://portswigger.net/web-security/deserialization/exploiting) explained if we change the serialized object's data type and value of `s:32:"rk8hIhoZFnTDxKQP015Tesyd7uYqU8y6"` to `i:0` where `i` represents `integer` data type and if this goes unchecked the user access is given without any password and we need `administrator` authentication thus we also need to change the value of username. The modified object will look like below.
 
+> O:4:"User":2:{s:8:"username";s:13:"administrator";s:12:"access_token";i:0";}
+
+After encoding with base64 and URL Encoding format the serialized object will look like this.
+
+> Tzo0OiJVc2VyIjoyOntzOjg6InVzZXJuYW1lIjtzOjEzOiJhZG1pbmlzdHJhdG9yIjtzOjEyOiJhY2Nlc3NfdG9rZW4iO2k6MDt9
+
+Update the object and forward the request. It will give Administrator login and then delete Carlos's account.
