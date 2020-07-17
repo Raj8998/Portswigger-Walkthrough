@@ -4,7 +4,7 @@
 
 ### Question Description:
 
-We have user access as wiener:peter but the lab is vulnerable to authentication bypass as it deserializes insecurely the object we pass. Get the Administrator access and then delete Carlos's account.
+We have user access as `wiener:peter` but the lab is vulnerable to authentication bypass as it deserializes insecurely the object we pass. Get the Administrator access and then delete Carlos's account.
 
 ### Tools Used:
 
