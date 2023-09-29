@@ -12,12 +12,12 @@ We have user access as `wiener:peter` but the lab is vulnerable to insecure dese
 
 Login with the given credentials and you will see below screen.
 
-![Home Screen After LogIn](logged_in_home_page.png)
+![Home Screen After LogIn](./logged_in_home_page.png)
 #### Step 2 [ Intercept HTTP request on burp suite ]:
 
 Start burp suite you have setup and refresh the home page after logging in on the lab. It will directly be intercepted by burp suite like below.
 
-![Intercepted HTTP Request](Intercepted_HTTP_request.png)
+![Intercepted HTTP Request](./Intercepted_HTTP_request.png)
 
 #### Step 3 [ Burp repeater and finding the serialized object ]:
 
@@ -27,7 +27,7 @@ Forward the HTTP request to burp repeater.
 
 Generally serialized objects are always in cookies section with 1) base64 encoded and then 2) URL encoded text which will look like below.
 
-![Encoded Serialized Object](encoded_serialized_object.png)
+![Encoded Serialized Object](./encoded_serialized_object.png)
 
 Decode above object and it will look like below.
 > O:4:"User":2:{s:8:"username";s:6:"wiener";s:5:"admin";b:0;}
