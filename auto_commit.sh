@@ -10,5 +10,5 @@ git add .;
 echo "Added to staging";
 git commit -m "$1" >> /dev/null 2>> /dev/null;
 echo "Commit Done";
-git push origin main >> /dev/null 2>> /dev/null;
+git push >> /dev/null 2>> /dev/null;
 echo "Pushed to repository";
