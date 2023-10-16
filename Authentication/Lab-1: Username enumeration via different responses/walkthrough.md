@@ -101,7 +101,7 @@ for user in validUsers:
 enum_password(enum_users())
 ```
 
-#### \[+] The script is available at [brute-force.py](./script/brute-force.py)
+#### \[+] The script is available at [brute-force.py](./scripts/brute-force.py)
 
 
 
