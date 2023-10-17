@@ -1,4 +1,4 @@
-# Lab-3: # Username enumeration via response timing
+# Lab-3: Username enumeration via response timing
 > Raj Pastagiya | 17/11/2023
 
 ## Problem Statement
@@ -7,9 +7,6 @@
 > Your credentials: `wiener:peter`
 
 **HINT**: To add to the challenge, the lab also implements a form of IP-based brute-force protection. However, this can be easily bypassed by manipulating HTTP request headers.
-
-### Summary
-
 #### Looking at the site's response time on valid and invalid login 
 - Before we start automating our enumeration, capture the login request in Burp-Suite to better see the response time on valid and invalid login requests.
 - When trying different usernames and passwords:
