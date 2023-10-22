@@ -1,4 +1,4 @@
-# Authentication Vulnerabilities
+# Vulnerabilities in password-based login
 > Raj Pastagiya | 16/11/2023
 
 ## Vulnerabilities in password-based login
